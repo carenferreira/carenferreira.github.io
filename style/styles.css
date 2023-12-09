@@ -25,3 +25,33 @@ p{
         height: 20vh;
     }
 }
+
+.carousel-inner > .carousel-item > img {
+ width: 50%;
+ height: auto;
+ margin: auto;
+}
+
+p {
+text-align: justify;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+.carousel-control-prev-icon:after,
+.carousel-control-next-icon:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: black;
+}
+
+.carousel-control-prev-icon:after {
+    content: "\f053";
+}
+
+.carousel-control-next-icon:after {
+    content: "\f054";
+}
