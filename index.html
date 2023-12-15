@@ -6,8 +6,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c0eef54d20.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/styles.css">
-    <link rel="icon" href="images/car.ico" type="image/x-icon">
-
     <title>Veículo Arduino - Apresentação</title>
 </head>
 <body>    
@@ -29,20 +27,17 @@
     <div class="container text-justify py-3">
         <section id="home" class="container">
             <h1 class="mt-2">Veículo Arduino Controlado por API</h1>
-            <p>Neste projeto, desenvolvemos um robô Arduino controlado por uma API HTTP e que utilizará programação em blocos visuais. Abaixo, explicamos cada ponto do projeto.</p>
+            <p>Neste projeto, desenvolvemos um robô Arduino controlado por API com várias funcionalidades...</p>
         </section>
 
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner text-center">
                 <div class="carousel-item active">
-                    <img class="d-block carousel-image" src="images/carrinho1.jpeg" alt="Primeiro slide">
-                 </div>
-                 <div class="carousel-item">
-                    <img class="d-block carousel-image" src="images/carrinho2.jpeg" alt="Segundo slide">
-                 </div>
-                 <div class="carousel-item">
-                    <img class="d-block carousel-image" src="images/carrinho3.jpeg" alt="Terceorp sçode">
-                 </div>
+                    <img class="d-block w-100 carousel-image" src="images/placeholder_1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 carousel-image" src="images/placeholder_2.jpg" alt="Second slide">
+                </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -57,33 +52,38 @@
 
         <section class="container mt-5">
             <h2>Principais Recursos</h2>
-            <p>O carrinho que desenvolvemos no trabalho foi programado através com Arduino e, além dos movimentos básicos (andar para frente, para trás e para os lados, por exemplo), ele também possui com um sensor de distância frontal para detectar obstáculos em seu caminho. O carrinho conta com um farol para iluminar o que estiver à sua frente, emite um sinal sonoro de ré quando o comando para tal é dado e, por fim, possui um LED RGB que indica seu estado de conexão à API: verde caso esteja conectado e vermelho caso não possua conexão.</p>
+            <p>O veículo robô Arduino é equipado com uma variedade de recursos para proporcionar uma experiência completa. Além dos movimentos básicos de andar para frente, para trás e virar para os lados, o robô apresenta um sensor frontal de distância para detectar obstáculos, uma luz e sinal sonoro de ré para operações reversas e um LED RGB que indica seu estado de conexão à API - verde para conectado e vermelho para desconectado.</p>
         </section>
 
         <section class="container mt-5">
             <h2>Apresentação do Projeto</h2>
             <p>Neste vídeo de apresentação, nós explicamos a estrutura do carrinho e seu funcionamento, seus recursos, e elaboramos mais sobre a API HTTP desenvolvida para a comunicação com o carrinho. Também é explicado o uso da biblioteca Blocky, utilizada para a programação em blocos visuais, e como nós integramos estes recursos.</p>
-            <div class="d-flex justify-content-center mt-4"><iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_ID_DE_VIDEO" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="d-flex justify-content-center mt-4">
+                <video width="560" height="315" controls>
+                    <source src="video/apresentacao.mp4" type="video/mp4">
+                </video>
+            </div>
         </section>
+
 
         <section id="documentacao" class="container mt-5">
             <h2>Documentação da API</h2>
-            <p>A documentação da API explica de maneira mais profunda como nós desenvolvemos a API o funcionamento desta em relação ao carrinho e a comunicação com este. A documentação conta com exemplos e detalhes de como decidimos integrar cada função e também explica como utilizar o carrinho, além de explicitar os recursos utilizados durante o desenvolvimento do projeto.</p>
+            <p>Explore nossa documentação da API para entender como interagir e enviar comandos para o veículo robô Arduino. A documentação fornece detalhes sobre os endpoints, parâmetros e respostas, tornando mais fácil para desenvolvedores integrarem novas funcionalidades ou aprimorarem o sistema existente.</p>
         </section>
 
         <section class="container mt-5">
             <h2>Interface de Programação Blockly</h2>
-            <p>Nós utilizamos a biblioteca Blocky para implementar uma interface de programação em blocos visuais. Ela fornece uma maneira fácil e intuitiva de controlar o veículo, sem a necessidade de conhecimento avançado sobre programação tradicional. Através do Blocky, nós conseguimos criar lógicas complexas sem tornar o uso do carrinho excessivamente complicado, mantendo a interface visual simples e eficiente.</p>
+            <p>Nossa interface de programação em blocos visuais, baseada na biblioteca Blockly, oferece uma maneira intuitiva de controlar o veículo robô. Com blocos personalizados, você pode criar lógicas complexas sem a necessidade de programação tradicional. Experimente a interface para vivenciar a simplicidade e eficiência da programação visual.</p>
         </section>
 
         <section class="container mt-5">
             <h2>Desafios do Mundo Real</h2>
-            <p>O carrinho será testado em uma situação simulando o "mundo real", movendo-se por pistas com obstáculos criadas pelo professor a fim de descobrir se o carrinho conseguiria funcionar fora de situações perfeitamente controladas. O "teste de fogo" será descobrir se os algoritmos de blocos e a construção do carrinho em si serão suficientes para percorrer o percurso corretamente, demonstrando a viabilidade do projeto na prática.</p>
+            <p>Nosso projeto não se limita apenas à teoria. Para simular desafios do mundo real, o professor criará pistas no laboratório com obstáculos. Sua tarefa será desenvolver algoritmos de blocos que permitam ao robô percorrer autonomamente essas pistas, demonstrando a eficácia e aplicabilidade prática do sistema.</p>
         </section>
 
         <section id="github" class="container mt-5">
             <h2>Repositório no GitHub</h2>
-            <p>Todo o código-fonte do projeto está disponível em nosso repositório no GitHub, assim como todos os recursos deste site de apresentação e a documentação do projeto. O GitHub oferece uma plataforma colaborativa para o desenvolvimento de software, e o Github Pages fornece uma plataforma através da qual podemos fazer o upload de páginas on-line sem a necessidade de pagar por um host. À qualquer pessoa que deseje visitá-lo: agradecemos muito a atenção, e esperamos que o nosso projeto seja do seu interesse!</p>
+            <p>Todo o código-fonte do projeto está disponível em nosso repositório no GitHub. Contribua, forneça feedback ou simplesmente explore o código para entender a implementação. O GitHub oferece uma plataforma colaborativa para o desenvolvimento de software, e sua participação é bem-vinda.</p>
         </section>
 
     </div>
